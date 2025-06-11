@@ -1,4 +1,4 @@
-// ! desplegar imagenes de las galerias
+// ! Desplegar imagenes de las galerias
 document.addEventListener('DOMContentLoaded', function () {
     var titulos = document.querySelectorAll('.galeria h3');
 
