@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -1045,4 +1046,1053 @@ body {
 @font-face {
   font-family: tommy-regular;
   src: url(../fuentes/MADE\ Tommy\ Soft\ Regular\ PERSONAL\ USE.otf);
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.principal {
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.botones-redes {
+  position: fixed;
+  top: 40%;
+  left: 1%;
+  z-index: 100;
+}
+
+.redes-btn {
+  margin: 5px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: block;
+  padding: 0 10px;
+  box-shadow: 0 3px 6px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.redes-btn:hover {
+  padding: 0 25px;
+  transition: 0.4s;
+  font-weight: 500;
+}
+
+.redes-btn:nth-child(1) {
+  color: #4267B2
+}
+
+.redes-btn:nth-child(2) {
+  color: #e1306c;
+}
+
+.redes-btn:nth-child(3) {
+  color: #25d366;
+}
+
+
+
+/*Estilos para Telefono*/
+@media screen and (min-width: 300px) and (max-width: 601px) {
+  body {
+    font-family: tommy-bold;
+  }
+
+  .tablet,
+  .escritorio {
+    display: none;
+  }
+
+  .telefono {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .telefono .nav {
+    width: 100%;
+    height: 100px;
+    background-color: #4f5877;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-logo {
+    position: relative;
+    margin-right: 20px;
+    font-size: 30px;
+    color: white;
+  }
+
+  .opciones_menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0%;
+    right: 0;
+    background-color: #273044;
+    display: grid;
+    place-items: center;
+    z-index: 300;
+    clip-path: circle(0% at top right);
+    transition: .4s;
+
+  }
+
+  .opciones_menu li {
+    list-style: none;
+  }
+
+  .opciones_menu a {
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .opciones_menu:target {
+    clip-path: circle(150% at top right);
+  }
+
+  .nav .logo {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    height: 100%;
+
+  }
+
+  .nav .logo img {
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+  }
+
+  .titulo-pag {
+    padding: 18px 0px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .seccion-galeria {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seccion-galeria {
+    position: relative;
+  }
+
+  .toggle-arrow {
+    color: rgba(0, 0, 0, 0.429);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  .toggle-arrow.rotate {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  .galeria {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  .galeria h3 {
+    color: rgba(0, 0, 0, 0.646);
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: rgba(98, 98, 98, 0.088);
+  }
+
+  .galeria h3:hover {
+    cursor: pointer;
+  }
+
+  .galeria h3 {
+    position: relative;
+  }
+
+  .cont-imagenes {
+    border-radius: 8px;
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cont-imagenes {
+    display: none;
+    position: relative;
+  }
+
+  .cont-imagenes.active {
+    display: inline-flex;
+  }
+
+  .toggle-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .imagen {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .imagen img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .titulo-servicios {
+    background-color: rgba(195, 195, 195, 0.132);
+    margin-top: 5px;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .seccion-galeria-servicios {
+    background-color: rgba(195, 195, 195, 0.132);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(246, 159, 159);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .all-elem-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    flex-wrap: wrap;
+  }
+
+  .secc-funda {
+    width: 300px;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .secc-funda h1 {
+    color: #273044;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: tommy-black;
+  }
+
+  .secc-funda p {
+    width: 200px;
+    color: #273044;
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: tommy-light;
+  }
+
+  .secc-funda strong {
+    margin-right: 5px;
+    color: #273044;
+    font-family: tommy-black;
+  }
+
+
+  .secc-central {
+    background-color: red;
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+  }
+
+
+  .secc-enlaces {
+    font-size: 12px;
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    color: #273044;
+
+  }
+
+  .enlaces {
+    margin-top: 20px;
+  }
+
+  .enlaces li {
+    list-style: none;
+    margin-top: 20px;
+
+  }
+
+  .enlaces a {
+    font-family: tommy-light;
+    text-decoration: none;
+    color: #273044;
+  }
+
+  .enlaces a {
+    font-family: tommy-light;
+    color: #163167;
+  }
+
+  .enlaces a:hover {
+    text-decoration: double;
+  }
+
+  .enlaces li .btn {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #a632e0;
+  }
+
+}
+
+
+
+/* Estilos para Tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+  body {
+    font-family: tommy-bold;
+  }
+
+  .escritorio,
+  .telefono {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tablet .nav {
+    width: 100%;
+    height: 100px;
+    background-color: #4f5877;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .tablet .nav {
+    width: 100%;
+    height: 100px;
+    background-color: #4f5877;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-logo {
+    position: relative;
+    margin-right: 20px;
+    font-size: 40px;
+    color: white;
+  }
+
+  .opciones_menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0%;
+    right: 0;
+    background-color: #273044;
+    display: grid;
+    place-items: center;
+    z-index: 210;
+    clip-path: circle(0% at top right);
+    transition: clip-path .4s;
+  }
+
+  .opciones_menu li {
+    list-style: none;
+  }
+
+  .opciones_menu a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .opciones_menu:target {
+    clip-path: circle(150% at top right);
+  }
+
+
+  .nav .logo {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36%;
+    height: 100%;
+
+  }
+
+  .nav .logo img {
+    width: 120%;
+    height: 70%;
+    box-sizing: border-box;
+    background-color: rgba(255, 0, 0, 0);
+  }
+
+  .titulo-pag {
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 17px;
+  }
+
+
+  .seccion-galeria {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba(115, 114, 114, 0.415);
+  }
+
+  .seccion-galeria {
+    position: relative;
+  }
+
+  .toggle-arrow {
+    color: rgba(0, 0, 0, 0.429);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  .toggle-arrow.rotate {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  .galeria {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .galeria h3 {
+    color: rgba(0, 0, 0, 0.646);
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: rgba(98, 98, 98, 0.088);
+  }
+
+  .galeria p {
+    width: 500px;
+  }
+
+  .galeria h3:hover {
+    cursor: pointer;
+  }
+
+  .galeria h3 {
+    position: relative;
+  }
+
+  .cont-imagenes {
+    border-radius: 8px;
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cont-imagenes {
+    display: none;
+    position: relative;
+  }
+
+  .cont-imagenes.active {
+    display: inline-flex;
+  }
+
+  .toggle-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .imagen {
+    width: 48%;
+    margin: 5px;
+  }
+
+  .imagen img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .titulo-servicios {
+    background-color: rgba(195, 195, 195, 0.111);
+    margin-top: 20px;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .seccion-galeria-servicios {
+    background-color: rgba(195, 195, 195, 0.111);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+
+  footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(246, 159, 159);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 20%;
+    margin-bottom: 0px;
+  }
+
+  .all-elem-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    flex-wrap: wrap;
+  }
+
+  .secc-funda {
+    width: 300px;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .secc-funda h1 {
+    color: #273044;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: tommy-black;
+  }
+
+  .secc-funda p {
+    width: 300px;
+    color: #273044;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: tommy-light;
+  }
+
+  .secc-funda strong {
+    margin-right: 5px;
+    color: #273044;
+    font-family: tommy-black;
+  }
+
+
+  .secc-central {
+    background-color: red;
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+  }
+
+
+  .secc-enlaces {
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #273044;
+
+  }
+
+  .enlaces {
+
+    margin-top: 20px;
+  }
+
+  .enlaces li {
+    list-style: none;
+    margin-top: 20px;
+
+
+  }
+
+  .enlaces a {
+    font-family: tommy-light;
+    text-decoration: none;
+    color: #273044;
+
+  }
+
+  .enlaces .btn-dona {
+    background-color: #a632e0;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .enlaces .btn-dona:hover {
+    background-color: #a632e0c1;
+  }
+
+  .enlaces a {
+    font-family: tommy-light;
+    color: #163167;
+  }
+
+  .enlaces a:hover {
+    text-decoration: double;
+  }
+
+  .enlaces li .btn {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #a632e0;
+  }
+
+
+}
+
+
+
+
+
+/*Estilos de Escritorio*/
+@media screen and (min-width: 1024px) {
+
+  body {
+    font-family: tommy-bold;
+  }
+
+  .telefono,
+  .tablet {
+    display: none;
+  }
+
+  .escritorio {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .escritorio .nav {
+    width: 100%;
+    height: 80px;
+    background-color: #4f5877;
+    display: flex;
+  }
+
+
+  .nav .logo {
+    margin-left: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+    height: 100%;
+
+  }
+
+  .nav .logo img {
+    width: 100%;
+    height: 70%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .nav .list-items {
+    margin-left: 9%;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list-items ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .list-items li {
+    padding: 9px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .list-items li:hover {
+    border-bottom: 1px solid #ffe1da;
+    transition: 0.3s;
+  }
+
+  .list-items a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .list-items a:hover {
+    color: #ffe1da;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-family: tommy-bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover {
+    color: #ffe1da;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4f5877;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .secc-btn-donacion {
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .secc-btn-donacion a {
+    border-radius: 5px;
+    color: #FCF6F5;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #a632e0;
+  }
+
+  .secc-btn-donacion a:hover {
+    padding: 15px;
+  }
+
+  .titulo-pag {
+    padding: 10px 0px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .seccion-galeria {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+
+  .seccion-galeria {
+    position: relative;
+  }
+
+  .toggle-arrow {
+    color: rgba(0, 0, 0, 0.429);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  .toggle-arrow.rotate {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  .galeria {
+    width: 75%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .galeria h3 {
+    color: rgba(0, 0, 0, 0.646);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: rgba(98, 98, 98, 0.088);
+  }
+
+  .galeria h3:hover {
+    cursor: pointer;
+  }
+
+  .galeria h3 {
+    position: relative;
+  }
+
+  .cont-imagenes {
+    background-color: rgba(194, 194, 194, 0.504);
+    border-radius: 8px;
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .cont-imagenes {
+    display: none;
+    position: relative;
+  }
+
+  .cont-imagenes.active {
+    display: inline-flex;
+  }
+
+  .toggle-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .imagen {
+    width: 30%;
+    margin: 10px;
+  }
+
+  .imagen img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  footer {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(246, 159, 159);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 50%;
+  }
+
+  .all-elem-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+  }
+
+  .secc-funda {
+    width: auto;
+    height: 100%;
+    margin-left: 50px;
+    padding: 10px;
+  }
+
+  .secc-funda h1 {
+    color: #273044;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: tommy-black;
+  }
+
+  .secc-funda p {
+    width: 300px;
+    color: #273044;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: tommy-light;
+  }
+
+  .secc-funda strong {
+    margin-right: 5px;
+    color: #273044;
+    font-family: tommy-black;
+  }
+
+
+  .secc-central {
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+  }
+
+
+  .secc-enlaces {
+    width: 39%;
+    height: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #273044;
+  }
+
+  .enlaces {
+    margin-top: 20px;
+  }
+
+  .enlaces .btn{
+    background-color: #a632e0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  .enlaces li {
+    list-style: none;
+    margin-top: 20px;
+
+  }
+
+  .enlaces a {
+    font-family: tommy-light;
+    text-decoration: none;
+    color: #273044;
+  }
+
+  .enlaces a {
+    font-family: tommy-light;
+    color: #163167;
+  }
+
+  .enlaces a:hover {
+    text-decoration: double;
+  }
+
+
+
+}
+
+
+
+
+
+
+@font-face {
+  font-family: tommy-bold;
+  src: url(../fuentes/MADE\ Tommy\ Soft\ Bold\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+  font-family: tommy-ExtraBold;
+  src: url(../fuentes/MADE\ Tommy\ Soft\ ExtraBold\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+  font-family: tommy-black;
+  src: url(../fuentes/MADE\ Tommy\ Soft\ Black\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+  font-family: tommy-light;
+  src: url(../fuentes/MADE\ Tommy\ Soft\ Light\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+  font-family: tommy-medium;
+  src: url(../fuentes/MADE\ Tommy\ Soft\ Medium\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+  font-family: tommy-regular;
+  src: url(../fuentes/MADE\ Tommy\ Soft\ Regular\ PERSONAL\ USE.otf);
+>>>>>>> 48b3dc1 (Cambiando formato de imagenes de jpg a webp para probar si mejora rendimiento)
 }
