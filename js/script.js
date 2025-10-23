@@ -35,3 +35,15 @@ window.onclick = function (event) {
         }
     }
 }
+
+function enviarMensaje(event,articulo){
+    event.preventDefault();
+
+    const numeroWhatsapp = "3017542208";
+    const mensaje = "¡Hola! Estoy interesado en comprar el artículo '" + articulo + "'¿Puede proporcionarme más información?";
+
+    const url = `https://api.whatsapp.com/send?phone=${numeroWhatsapp}&text=${encodeURIComponent(mensaje)}`;
+
+    window.open(url, '_blank')
+
+}
